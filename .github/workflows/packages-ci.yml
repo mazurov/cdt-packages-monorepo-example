@@ -38,7 +38,7 @@ jobs:
         with:
           # For single-package repo: omit packages-directory or set to ''
           # For multi-package repo: set to 'packages' or your custom directory
-          # packages-directory: 'packages'
+          packages-directory: 'packages'
           validate-only: 'true'
 
       - name: Display validation results
@@ -64,7 +64,7 @@ jobs:
         with:
           # For single-package repo: omit packages-directory
           # For multi-package repo: uncomment and set the directory
-          # packages-directory: 'packages'
+          packages-directory: 'packages'
           package-format: 'zip'
 
       - name: List generated packages
@@ -107,7 +107,7 @@ jobs:
         with:
           # For single-package repo: omit packages-directory
           # For multi-package repo: uncomment and set the directory
-          # packages-directory: 'packages'
+          packages-directory: 'packages'
           package-format: 'both'  # Create .pkg archives AND push to OCI registry
           # Optional overrides (smart defaults):
           # oci-registry: 'ghcr.io'
